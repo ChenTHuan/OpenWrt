@@ -45,7 +45,7 @@ CONFIG_TARGET_x86_64_Generic=y
 EOF
 # 固件压缩:
 cat >> .config <<EOF
-CONFIG_TARGET_IMAGES_GZIP=y
+CONFIG_TARGET_IMAGES_GZIP=n
 EOF
 # 编译UEFI固件:
 cat >> .config <<EOF
@@ -53,8 +53,8 @@ CONFIG_EFI_IMAGES=y
 EOF
 # IPv6支持:
 cat >> .config <<EOF
-CONFIG_PACKAGE_dnsmasq_full_dhcpv6=n
-CONFIG_PACKAGE_ipv6helper=n
+CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+CONFIG_PACKAGE_ipv6helper=y
 EOF
 # 多文件系统支持:
 cat >> .config <<EOF
@@ -67,9 +67,9 @@ CONFIG_PACKAGE_kmod-fs-squashfs=y
 EOF
 # USB3.0支持:
 cat >> .config <<EOF
-CONFIG_PACKAGE_kmod-usb2=y
-CONFIG_PACKAGE_kmod-usb2-pci=y
-CONFIG_PACKAGE_kmod-usb3=y
+CONFIG_PACKAGE_kmod-usb2=n
+CONFIG_PACKAGE_kmod-usb2-pci=n
+CONFIG_PACKAGE_kmod-usb3=n
 EOF
 # 常用LuCI插件选择:
 cat >> .config <<EOF
@@ -86,7 +86,7 @@ CONFIG_PACKAGE_luci-app-frpc=n
 CONFIG_PACKAGE_autosamba=n
 CONFIG_PACKAGE_luci-app-samba=n
 CONFIG_PACKAGE_samba36-server=n
-CONFIG_PACKAGE_luci-app-cifsd=y
+CONFIG_PACKAGE_luci-app-cifsd=n
 # 文件管理
 CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-filebrowser=y
@@ -101,20 +101,20 @@ CONFIG_PACKAGE_luci-app-unblockmusic=n
 CONFIG_UnblockNeteaseMusic_Go=n
 CONFIG_UnblockNeteaseMusic_NodeJS=n
 # vpn
-CONFIG_PACKAGE_luci-app-ssr-plus=y
-CONFIG_PACKAGE_luci-app-openclash=y
-CONFIG_PACKAGE_luci-app-bypass=y
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-openclash=n
+CONFIG_PACKAGE_luci-app-bypass=n
 #CONFIG_PACKAGE_luci-app-vssr=n
-#CONFIG_PACKAGE_luci-app-vssr-plus=y
-CONFIG_PACKAGE_luci-app-passwall=y
+#CONFIG_PACKAGE_luci-app-vssr-plus=n
+CONFIG_PACKAGE_luci-app-passwall=n
 CONFIG_PACKAGE_luci-app-webadmin=n
 CONFIG_PACKAGE_luci-app-wrtbwmon=n
 # 其他软件(京东签到,UU,smartdns,netdata,微信)
 CONFIG_PACKAGE_luci-app-jd-dailybonus=n
 CONFIG_PACKAGE_luci-app-uugamebooster=n
 CONFIG_PACKAGE_luci-app-smartdns=n
-CONFIG_PACKAGE_luci-app-netdata=y
-CONFIG_PACKAGE_luci-app-serverchan=y
+CONFIG_PACKAGE_luci-app-netdata=n
+CONFIG_PACKAGE_luci-app-serverchan=n
 EOF
 # 取消默认插件
 cat >> .config <<EOF
@@ -128,9 +128,9 @@ CONFIG_PACKAGE_luci-app-upnp=n
 CONFIG_PACKAGE_luci-app-sfe=n
 CONFIG_PACKAGE_luci-app-accesscontrol=n
 # zerotier内网穿透,使用VPN
-CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_luci-app-zerotier=n
 # 比Samba3无优势(硬盘休眠)
-CONFIG_PACKAGE_luci-app-hd-idle=y
+CONFIG_PACKAGE_luci-app-hd-idle=n
 CONFIG_PACKAGE_luci-app-samba4=n
 # 挂载远程共享
 CONFIG_PACKAGE_luci-app-cifs-mount=n
@@ -139,8 +139,8 @@ CONFIG_PACKAGE_luci-app-ipsec-vpnd=n
 EOF
 # LuCI主题:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-theme-atmaterial=y
-CONFIG_PACKAGE_luci-theme-argon=n
+CONFIG_PACKAGE_luci-theme-atmaterial=n
+CONFIG_PACKAGE_luci-theme-argon=y
 EOF
 # 常用软件包:
 cat >> .config <<EOF
