@@ -88,8 +88,8 @@ CONFIG_PACKAGE_luci-app-samba=n
 CONFIG_PACKAGE_samba36-server=n
 CONFIG_PACKAGE_luci-app-cifsd=n
 # 文件管理
-CONFIG_PACKAGE_luci-app-filetransfer=y
-CONFIG_PACKAGE_luci-app-filebrowser=y
+CONFIG_PACKAGE_luci-app-filetransfer=n
+CONFIG_PACKAGE_luci-app-filebrowser=n
 # 广告过滤
 CONFIG_PACKAGE_luci-app-koolproxyR=n
 CONFIG_PACKAGE_luci-app-adbyby-plus=n
@@ -166,8 +166,8 @@ EOF
 
 # Image Options 分区设置
 cat >> .config <<EOF
-CONFIG_TARGET_KERNEL_PARTSIZE=30
-CONFIG_TARGET_ROOTFS_PARTSIZE=300
+CONFIG_TARGET_KERNEL_PARTSIZE=16
+CONFIG_TARGET_ROOTFS_PARTSIZE=1008
 EOF
 # 
 # ========================固件定制部分结束========================
