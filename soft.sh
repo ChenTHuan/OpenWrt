@@ -6,9 +6,9 @@ cd package/lean
 pwd
 ls -l
 
-#sirpdboy的源码仓库
-#git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
-#make menuconfig
+sirpdboy的源码仓库
+git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy-package
+make menuconfig
 
 #atmaterial主题
 git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
