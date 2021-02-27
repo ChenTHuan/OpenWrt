@@ -40,7 +40,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 # git clone https://github.com/Leo-Jo-My/my.git
 # git clone https://github.com/liuwenwv/luci-app-vssr-plus.git
 
-#bypass
+bypass
 git clone https://github.com/garypang13/luci-app-bypass.git
 
 # openclash
@@ -48,7 +48,7 @@ git clone https://github.com/garypang13/luci-app-bypass.git
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 git clone https://github.com/vernesong/OpenClash.git && cp -r OpenClash/luci-app-openclash ./
 
-# netdata
+ netdata
 rm -rf luci-app-netdata && git clone https://github.com/sirpdboy/luci-app-netdata.git
 
 # adguardhome  编译问题(https://github.com/rufengsuixing/luci-app-adguardhome/issues/83)
@@ -65,7 +65,7 @@ svn co https://github.com/firker/diy-ziyong/trunk/luci-app-koolproxyR
 #godproxy
 git clone https://github.com/godros/luci-app-godproxy.git 
 
-#dns广告过滤
+dns广告过滤
 git clone https://github.com/garypang13/luci-app-dnsfilter.git
 
 # 文件管理 无法编译安装 进入github下载ipk手动安装
